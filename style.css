@@ -1,0 +1,968 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/* Header bar */
+.header{
+    position: relative; 
+    min-height: 150px;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.74)), url(photos/Footer.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    background-size: cover;
+}
+
+nav{
+    display: flex;
+    padding: 1.8% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NAV-BAR{
+    flex: 1;
+    text-align: right;
+}
+
+.NAV-BAR ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;  
+}
+
+.NAV-BAR ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.NAV-BAR ul li::after{
+    content: '';
+    height: 5px;
+    width: 0%;
+    background: black;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.NAV-BAR ul li:hover::after{
+    width: 100%;
+}
+
+body{
+    background-color: rgba(184, 206, 189, 1);
+}
+
+/* welcome section */
+.welcome{
+    min-height: 400px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+}
+
+.welcome-text{
+    color: black;
+    text-align: center;
+}
+
+.welcome-text h1{
+    font-size: 50px;
+    padding-top: 70px;
+    margin: auto;
+}
+
+.welcome-text p{
+    font-size: 30px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    font-size: 20px;
+    background: white;
+    color: black;
+    position: relative;
+}
+
+.btn:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 0);
+    transition: 0.5s;
+    align-items: center;
+}
+
+
+/* new release section */
+.new-release{
+    min-height: 700px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.new-release h1{
+    color: black;
+    font-size: 45px;
+    text-align: center;
+    padding-bottom: 50px;
+    top: 900px;
+    left: 850px;
+}
+
+.new-menu{
+    width: 100%;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.new-menu img{
+    /* margin-left: 600px; */
+    margin: auto;
+    display: flex;
+    width: 300px;
+    height: 180px;
+    background: linear-gradient(0deg, rgba(193, 161, 137, 0.2), rgba(193, 161, 137, 0.2)), linear-gradient(0deg, rgba(255, 255, 255, 0.31), rgba(255, 255, 255, 0.31)), url(photos/Healthy\ food\ 2.jpg);
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.p1{
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 30px; 
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.new-menu p{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.btn-new{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    color: rgb(0, 0, 0);
+    padding: 10px 30px;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+.btn-new:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 0);
+    transition: 0.5s;
+    align-items: center;
+}
+
+/* VORGREENS FAV */
+.vor-fav{
+    min-height: 600px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
+
+.vor-fav h1{
+    color: black;
+    font-size: 45px;
+    font-weight: bold;
+    padding-bottom: 70px;
+}
+
+.fav-menu{
+    width: 104%;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: white ;
+    height: 400px;
+    display: flex;
+}
+
+.fav-menu img{
+    height: 100px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.favourite-left{
+    flex-basis: 40%;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(135, 222, 94, 0.445);
+    margin: auto;
+    height: 300px;
+    width: 800px;
+}
+
+.favourite-left h3{
+    margin-top: 20px;
+}
+
+.favourite-left p{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.favourite-right{
+    flex-basis: 40%;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(135, 222, 94, 0.445);
+    margin: auto;
+    height: 300px;
+    width: 800px;
+}
+
+
+.favourite-right h3{
+    margin-top: 20px;
+
+}
+.favourite-right p{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-fav{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    padding: 4px 20px;
+    font-size: 12px;
+    position: relative;
+    
+}
+
+.btn-fav:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 0);
+    transition: 0.5s;
+    align-items: center;
+}
+
+
+/* FOOTER */
+
+#footer{
+    width: 100%;
+    min-height: 150px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.74), rgba(255, 255, 255, 0.74)), url(photos/Footer.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-position: center;
+    background-size: cover;
+}
+
+#footer #contain-bot{
+	overflow: hidden;
+}
+
+#footer #contain-bot .inifooter{
+    display: inline-table;
+	width: 265px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#footer #contain-bot .inifooter1{
+    float: right;
+    margin-top: 30px;
+    margin-right: 80px;
+}
+
+#footer #contain-bot .inifooter p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+#footer #contain-bot .BEBAS p{
+    text-align: center;
+}
+
+#logo-sosmed img{
+    width: 45px;
+    height: 30px;
+}
+
+/* About US */
+
+/* about info */
+.about{
+    min-height: 150px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.about h1{
+    font-size: 40px;
+}
+
+.about p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* visi misi */
+
+.visi-misi{
+    min-height: 280px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.visi{
+    flex-basis: 40%;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.visi h2{
+    font-size: 40px;
+}
+
+.visi p{
+    margin-top: 70px;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.misi{
+    flex-basis: 40%;
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.misi h2{
+    font-size: 40px;
+}
+.misi ol{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+/* history */
+.Ab-history{
+    min-height: 200px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.Ab-history h2{
+    font-size: 40px;
+}
+
+.Ab-history p{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* team */
+.team{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+    min-height: 600px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.pic-column{
+    width: 100%;
+    height: 100%;
+    flex-basis: 42%;
+    border-radius: 50%; 
+    position: relative;
+    overflow: hidden;
+}
+
+.pic-column img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transition: 0.8s;
+}
+
+.layer:hover{
+    background-color: rgba(4,4,6,0.4);
+}
+
+
+.layer h2{
+    width: 100%;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.layer:hover h2{
+    bottom: 50%;
+    opacity: 1;
+}
+
+/* CONTACT US */
+
+.contact{
+    min-height: 300px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background-image: url(photos/contactus.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.contact h1{
+    font-size: 70px;
+    text-align: center;
+    padding-top: 120px;
+    color: white;
+}
+
+/* .contact-text{
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 80%;
+} */
+
+
+.contactRight h3{
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00000066;
+}
+
+.fullContact{
+    min-height: 300px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.contact-text{
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contactForm{
+    margin-top: 5px;
+    font-size: 18px;
+    width: 90%;
+    height: 60%;
+}
+
+#name #fullname{
+    margin-left: 10px;
+    margin-top:10px;
+    width: 300px;
+}
+
+#mail #email{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 300px;
+}
+
+.gend {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+#msg #messages{
+    margin-left: 10px;
+    width: 480px;
+    height: 220px;
+}
+
+.checkbox{
+    font-size: 12px;
+    color: red;
+    width: 600px;
+}
+
+#button {
+    margin-bottom: 30px;
+    margin-right: 200px;
+    text-align: center;
+}
+
+#contactRight{
+    text-align: center;
+    width: 45%;
+    margin-bottom: 150px;
+}
+
+#contactRight .getin{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.email h4{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.phone h4{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.address h4{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.operation h4{
+    font-size: 20px;
+    border-bottom: 3px solid black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* MENU */
+.menu{
+    min-height: 150px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 60px;
+    justify-content: space-between;
+}
+
+.menu h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.btn-menu{
+    display: inline-block;
+    justify-content: space-between;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    padding: 5px 24px;
+    font-size: 18px;
+    position: relative;
+    margin-left: 50px;
+}
+
+.btn-menu:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 0, 0);
+    transition: 0.5s;
+    align-items: center;
+}
+
+.menu-mideast{
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,10,40,0.7),rgba(10,10,40,0.7)),url(photos/middle\ eastern.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.menu-mideast h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+.menu-info{
+    min-height: 400px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+.menu-info img{
+    height: 100px;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.menu-left{
+    flex-basis: 40%;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.445);
+    margin: auto;
+    height: 330px;
+    width: 800px;
+}
+
+.menu-left h3{
+    margin-top: 20px;
+}
+
+.menu-left p{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.menu-right{
+    flex-basis: 40%;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.445);
+    margin: auto;
+    height: 330px;
+    width: 800px;
+}
+
+
+.menu-right h3{
+    margin-top: 20px;
+
+}
+.menu-right p{
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.btn-menu1{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    padding: 4px 20px;
+    font-size: 12px;
+    position: relative;
+}
+
+.btn-menu1:hover{
+    background-color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 0, 0);
+    transition: 0.5s;
+    align-items: center;
+}
+
+/* ASIA */
+.menu-asia{
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,10,40,0.7),rgba(10,10,40,0.7)),url(photos/asia.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.menu-asia h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+/* EUROPE */
+.menu-europe{
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,10,40,0.7),rgba(10,10,40,0.7)),url(photos/europe.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.menu-europe h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+/* dessert */
+
+.menu-dessert{
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(8,8,30,0.7),rgba(8,8,30,0.7)),url(photos/dessertbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.menu-dessert h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+/* special dish */
+
+.menu-special{
+    min-height: 300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(10,10,40,0.7),rgba(10,10,40,0.7)),url(photos/special\ dish.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.menu-special h1{
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    padding-top: 130px;
+}
+
+/* FIND US */
+.where{
+    min-height: 100px;
+    width: 80%;
+    text-align: center;
+    margin: auto; 
+    justify-content: center;
+}
+
+.map-image{ 
+    min-height: 450px;
+    width: 100%;
+    background-image:url(photos/map.jpg);
+    background-size: cover;
+}
+
+.str{
+    min-height: 100px;
+    width: 80%;
+    text-align: center;
+    margin: auto; 
+    margin-top: 40px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.where h1{
+    text-align: center;
+    font-size: 45px;
+    margin-top: 40px;
+}
+
+.store-jkt{
+    min-height: 40px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.store1{
+    min-height: 100px;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.jakarta1{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 48%;
+    background-color: white;
+    height: 150px;
+    border-radius: 10px 0px 0px 0px;
+}
+
+.jakarta-image{
+    margin-top: 10px;
+}
+
+.jakarta-text{
+    margin-top: 10px;
+}
+
+.jakarta2{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 48%;
+    background-color: white;
+    height: 150px;
+    border-radius: 0px 10px 0px 0px;
+}
+
+.store2{
+    min-height: 200px;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.jakarta3{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 48%;
+    background-color: white;
+    height: 150px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.jakarta4{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 48%;
+    background-color: white;
+    height: 150px;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.store-text{
+    min-height: 40px;
+    text-align: center;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.s-text{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 33%;
+}
+
+.store3{
+    min-height: 150px;
+    text-align: center;
+    width: 90%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+.bandung{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 32%;
+    background-color: white;
+    height: 180px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.jogja{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 32%;
+    background-color: white;
+    height: 180px;
+}
+
+.malang{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+    flex-basis: 32%;
+    background-color: white;
+    height: 180px;
+    border-radius: 0px 10px 10px 0px;
+}
+
